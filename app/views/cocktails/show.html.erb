@@ -6,7 +6,7 @@
     <div>
       <h3>Doses</h3>
       <% @cocktail.doses.each do |dose| %>
-      <p><%= dose.ingredient.name %> : <%= dose.description %> <%= link_to '<i class="fa fa-trash destroy_dose"></i>'.html_safe, dose_path(dose), method: :delete %>
+      <p><%= dose.ingredient.name %> : <%= dose.description %> ml <%= link_to '<i class="fa fa-trash destroy_dose"></i>'.html_safe, dose_path(dose), method: :delete %>
         </p>
 
       <% end %>
