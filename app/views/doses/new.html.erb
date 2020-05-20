@@ -1,5 +1,7 @@
 <%= simple_form_for [ @cocktail, @dose ] do |f| %>
   <%= f.association :ingredient, input_html: {class: "beautiful-dropdown"} %>
+  <!-- or as: :select for the dropdown -->
   <%= f.input :description %>
   <%= f.submit "Submit", class: "btn btn-primary" %>
+<!--   <%= f.button :submit,  class: "btn-btn" %> -->
 <% end %>
